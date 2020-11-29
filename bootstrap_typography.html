@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Bootstrap Practice</title>
+		<meta name="viewport" content="wdith-device-width, initial-scale=1, shrink-to-fit=no">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+		<style>
+			.Box{padding: 60px 10px; background: #ddd}
+			.Box:nth-child(even){background: #eee;}
+			h1, h2{margin: 30px 0;}
+			.container-fluid, .container{margin: 50px auto; height: 200px;}
+		</style>
+	</head>
+	<body>
+		
+		<div style="max-width: 1200px; margin: 0 auto; padding: 10px;">
+			<div class="container-fluid">
+				<div class="row" style="margin-top: 20px;">
+
+					<div class="col-6 Box">
+						<h1 class="display-1">Heading 1</h1>
+						<p class="h1">"Begin today!" That's all the note said. There was no indication from where it came or who may have written it. Had it been meant for someone else? Meghan looked around the room, but nobody made eye contact back. For a brief moment, she thought it might be a message for her to follow her dreams, but ultimately decided it was easier to ignore it as she crumpled it up and threw it away.</p>
+						<p class="lead">Stranded. Yes, she was now the first person ever to land on Venus, but that was of little consequence. Her name would be read by millions in school as the first to land here, but that celebrity would never actually be seen by her. She looked at the control panel and knew there was nothing that would ever get it back into working order. She was the first and it was not clear this would also be her last.</p>	
+					</div>
+					<!-- display-1는 heading을 더 크고 잘 보이게끔 하는 클래스이다. -->
+					<!-- class="h1/h2/h3..."를 추가함으로써, 해당 요소에 대해 h1, h2 ... 텍스트 스타일을 추가할 수 있다. -->
+					<!-- class="lead"는 텍스트 스타일 중 하나이다. -->
+					<div class="col-6 Box">
+						<h2><u>Heading 2</u></h2>
+						<p><mark>"Begin today!" That's all the note said. There was no indication from where it came or who may have written it. Had it been meant for someone else? Meghan looked around the room, but nobody made eye contact back. For a brief moment, she thought it might be a message for her to follow her dreams, but ultimately decided it was easier to ignore it as she crumpled it up and threw it away.</mark></p>
+						<p><s>Stranded. Yes, she was now the first person ever to land on Venus, but that was of little consequence. Her name would be read by millions in school as the first to land here, but that celebrity would never actually be seen by her. She looked at the control panel and knew there was nothing that would ever get it back into working order. She was the first and it was not clear this would also be her last.</s></p>
+					</div>
+					<!-- <u>는 밑줄 스타일이다 -->
+					<!-- <mark>는 텍스트 하이라이팅 스타일이다 -->
+					<!-- <s>는 텍스트 '취소선' 스타일이다. -->
+				</div>
+				<div class="row" style="margin-top: 20px;">
+					<div class="col-6 Box">
+						<h3><strong>Heading 3</strong></h3>
+						<p><small>"Begin today!" That's all the note said. There was no indication from where it came or who may have written it. Had it been meant for someone else? Meghan looked around the room, but nobody made eye contact back. For a brief moment, she thought it might be a message for her to follow her dreams, but ultimately decided it was easier to ignore it as she crumpled it up and threw it away.</small></p>
+						<p><em>Stranded. Yes, she was now the first person ever to land on Venus, but that was of little consequence. Her name would be read by millions in school as the first to land here, but that celebrity would never actually be seen by her. She looked at the control panel and knew there was nothing that would ever get it back into working order. She was the first and it was not clear this would also be her last.</em></p>
+					</div>
+					<!-- <strong>는 텍스트를 굵게 만드는 스타일이다. -->
+					<!-- <small>는 텍스트를 작게 만드는 스타일이다. -->
+					<!-- <em>는 텍스트를 이탈릭으로 만드는 스타일이다. -->
+					<div class="col-6 Box">
+						<h4><blockquote class="blockquote">Heading 4</blockquote></h4>
+						<ul>
+							<li>"Begin today!" That's all the note said. There was no indication from where it came or who may have written it. Had it been meant for someone else? Meghan looked around the room, but nobody made eye contact back. For a brief moment, she thought it might be a message for her to follow her dreams, but ultimately decided it was easier to ignore it as she crumpled it up and threw it away.</li>
+							<li>Stranded. Yes, she was now the first person ever to land on Venus, but that was of little consequence. Her name would be read by millions in school as the first to land here, but that celebrity would never actually be seen by her. She looked at the control panel and knew there was nothing that would ever get it back into working order. She was the first and it was not clear this would also be her last.</li>
+						</ul>
+						<!-- <blockquote>는 인용구들을 넣을 때 쓰는 텍스트 스타일이다. -->
+						<!-- <ul> <li>는 텍스트 리스트를 만들때 쓰는 스타일이다. -->
+					</div>
+				</div>
+				<div class="row" style="margin-top: 20px;">
+					<div class="col-2 Box"><strong>Description List</strong></div>
+					<div class="col-5  Box">"Begin today!" That's all the note said. There was no indication from where it came or who may have written it. Had it been meant for someone else? Meghan looked around the room, but nobody made eye contact back. For a brief moment, she thought it might be a message for her to follow her dreams, but ultimately decided it was easier to ignore it as she crumpled it up and threw it away.</div>
+					<div class="col-5 text-truncate Box">"Begin today!" That's all the note said. There was no indication from where it came or who may have written it. Had it been meant for someone else? Meghan looked around the room, but nobody made eye contact back. For a brief moment, she thought it might be a message for her to follow her dreams, but ultimately decided it was easier to ignore it as she crumpled it up and threw it away.</div>
+				</div>
+				<!-- .text-truncate는 해당 column에 해당하는 길이의 글자만 출력하려고 할 때 쓰는 텍스트 클래스 스타일이다. -->
+			</div>
+		</div>
+
+		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+	</body>
+</html>
