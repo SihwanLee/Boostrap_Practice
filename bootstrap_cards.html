@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Bootstrap Practice</title>
+		<meta name="viewport" content="wdith-device-width, initial-scale=1, shrink-to-fit=no">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+		<style>
+			.Box{padding: 60px 10px; background: #ddd}
+			.Box:nth-child(even){background: #eee;}
+			h1, h2{margin: 30px 0;}
+			.container-fluid, .container{padding-bottom: 20px; max-width:1400px;}
+		</style>
+	</head>
+	<body>
+
+		<nav class="navbar navbar-expand-lg navbar-light bg-light row">
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div class="collapse navbar-collapse offset-1 col-11" id="navbarSupportedContent">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item"><a class="navbar-brand" href="#">Navbar</a></li>
+					<li class="nav-item"><a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a></li>
+					<li class="nav-item"><a class="nav-link" href="#">Tab 1</a></li>
+					<li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown Tab</a>
+					<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+						<a class="dropdown-item" href="#">Action</a>
+		 				<a class="dropdown-item" href="#">Another action</a>
+						<div class="dropdown-divider"></div>
+						<a class="dropdown-item" href="#">Something else here</a>
+		      		</div></li>
+					<li class="nav-item"><a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Tab 2</a></li>
+				</ul>
+				<form class="form-inline my-2 my-lg-0">
+					<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+					<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+				</form>
+			</div>
+		</nav>
+		<div class="jumbotron jumbotron-fluid row">
+			<div class="offset-1 col-10">
+				<h1 class="display-1">Heading 1</h1>
+				<p class="h1">"Begin today!" That's all the note said. There was no indication from where it came or who may have written it. Had it been meant for someone else? Meghan looked around the room, but nobody made eye contact back. For a brief moment, she thought it might be a message for her to follow her dreams, but ultimately decided it was easier to ignore it as she crumpled it up and threw it away.</p>
+				<p class="lead">Stranded. Yes, she was now the first person ever to land on Venus, but that was of little consequence. Her name would be read by millions in school as the first to land here, but that celebrity would never actually be seen by her. She looked at the control panel and knew there was nothing that would ever get it back into working order. She was the first and it was not clear this would also be her last.</p>
+			</div>
+		</div>
+		<div class='container'>
+			<div class="card-deck">
+				<div class="card">
+					<div class="card-header text-white bg-primary">
+						<h1>Heading 1</h1>
+					</div>
+
+
+					<div class="card-body">
+						<p>"Begin today!" That's all the note said. There was no indication from where it came or who may have written it. Had it been meant for someone else? Meghan looked around the room, but nobody made eye contact back. For a brief moment, she thought it might be a message for her to follow her dreams, but ultimately decided it was easier to ignore it as she crumpled it up and threw it away.</p>
+						<p>Stranded. Yes, she was now the first person ever to land on Venus, but that was of little consequence. Her name would be read by millions in school as the first to land here, but that celebrity would never actually be seen by her. She looked at the control panel and knew there was nothing that would ever get it back into working order. She was the first and it was not clear this would also be her last.</p>
+					</div>
+					<div class="card-footer">
+						<p>More Info</p>
+					</div>
+				</div>
+				<div class="card">
+					<div class="card-header text-white bg-danger">
+						<h1>Heading 1</h1>
+					</div>
+					<div class="card-body">
+						<p>"Begin today!" That's all the note said. There was no indication from where it came or who may have written it. Had it been meant for someone else? Meghan looked around the room, but nobody made eye contact back. For a brief moment, she thought it might be a message for her to follow her dreams, but ultimately decided it was easier to ignore it as she crumpled it up and threw it away.</p>
+						<p>Stranded. Yes, she was now the first person ever to land on Venus, but that was of little consequence. Her name would be read by millions in school as the first to land here, but that celebrity would never actually be seen by her. She looked at the control panel and knew there was nothing that would ever get it back into working order. She was the first and it was not clear this would also be her last.</p>
+					</div>
+					<div class="card-footer">
+						<p>More Info</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- card-deck을 통해 안에 있는 card들이 서로 붙어 있지 않고 동일한 넓이 높이를 가지게끔 한다 -->
+		<!-- card-header를 통해 안에 있는 card에 header를 정의할 수 있다 -->
+		<!-- card-body를 통해 안에 있는 card에 body를 정의할 수 있다 -->
+		<!-- card-footer를 통해 안에 있는 card에 footer를 정의할 수 있다 -->
+		<!-- text-white, bg-info를 통해 안에 있는 card-header / card-body / card-footer 등 특정 element 텍스트 색깔과 배경색을 정할 수 있다 -->
+
+		<div class='container'>
+			<div class="card-group">
+				<div class="card">
+					<div class="card-header text-white bg-warning">
+						<h1>Heading 1</h1>
+					</div>
+					<div class="card-body">
+						<p>"Begin today!" That's all the note said. There was no indication from where it came or who may have written it. Had it been meant for someone else? Meghan looked around the room, but nobody made eye contact back. For a brief moment, she thought it might be a message for her to follow her dreams, but ultimately decided it was easier to ignore it as she crumpled it up and threw it away.</p>
+						<p>Stranded. Yes, she was now the first person ever to land on Venus, but that was of little consequence. Her name would be read by millions in school as the first to land here, but that celebrity would never actually be seen by her. She looked at the control panel and knew there was nothing that would ever get it back into working order. She was the first and it was not clear this would also be her last.</p>
+					</div>
+					<div class="card-footer">
+						<p>More Info</p>
+					</div>
+				</div>
+				<div class="card">
+					<div class="card-header text-white bg-success">
+						<h1>Heading 1</h1>
+					</div>
+					<div class="card-body">
+						<p>"Begin today!" That's all the note said. There was no indication from where it came or who may have written it. Had it been meant for someone else? Meghan looked around the room, but nobody made eye contact back. For a brief moment, she thought it might be a message for her to follow her dreams, but ultimately decided it was easier to ignore it as she crumpled it up and threw it away.</p>
+						<p>Stranded. Yes, she was now the first person ever to land on Venus, but that was of little consequence. Her name would be read by millions in school as the first to land here, but that celebrity would never actually be seen by her. She looked at the control panel and knew there was nothing that would ever get it back into working order. She was the first and it was not clear this would also be her last.</p>
+					</div>
+					<div class="card-footer">
+						<p>More Info</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- card-group 통해 안에 있는 card들이 서로 붙어 있고 동일한 넓이 높이를 가지게끔 한다 -->
+
+		<div class='container'>
+			<div class="card-group">
+				<div class="card">
+					<img class="card-img-top" src="imgs/1.png">
+					<div class="card-body">
+						<p>"Begin today!" That's all the note said. There was no indication from where it came or who may have written it. Had it been meant for someone else? Meghan looked around the room, but nobody made eye contact back. For a brief moment, she thought it might be a message for her to follow her dreams, but ultimately decided it was easier to ignore it as she crumpled it up and threw it away.</p>
+						<p>Stranded. Yes, she was now the first person ever to land on Venus, but that was of little consequence. Her name would be read by millions in school as the first to land here, but that celebrity would never actually be seen by her. She looked at the control panel and knew there was nothing that would ever get it back into working order. She was the first and it was not clear this would also be her last.</p>
+					</div>
+					<div class="card-footer">
+						<p>More Info</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- card-img-top을 통해 card의 맨 위에 사진을 넣을 수 있다 -->
+
+		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+		<script>
+			$(".nav li a").on("click", function(){
+				$(".nav li a").removeClass("active");
+				$(this).addClass("active");
+			});
+		</script>
+	</body>
+</html>
